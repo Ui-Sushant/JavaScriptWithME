@@ -1,0 +1,121 @@
+<<<<<<< HEAD
+// ==========================================================
+// 📘 JavaScript Numbers & Math Methods (with Examples)
+// ==========================================================
+
+// 🔹 Declaring Numbers
+const credit = 500;
+const balance = new Number(200); // Not recommended — creates a Number object
+
+console.log(balance); // [Number: 200]
+console.log(credit);  // 500
+
+// 🔸 Convert Number to String
+console.log(balance.toString());        // "200"
+console.log(balance.toString().length); // 3
+
+// 🔸 .toFixed(digits) → Formats number with fixed decimals
+console.log(balance.toFixed(2)); // "200.00" (string)
+
+// 🔸 .toPrecision(n) → Formats to n significant digits
+const otherNumber = 23.8996;
+console.log(otherNumber.toPrecision(3)); // "23.9"
+
+// 🔸 .toLocaleString() → Adds commas for readability
+const hundreds = 100000;
+console.log(hundreds.toLocaleString('en-IN')); // "1,00,000" (Indian format)
+
+
+// ==========================================================
+// 🔹 MATH OBJECT — Built-in JavaScript Math Library
+// ==========================================================
+
+// ✅ Absolute Value
+console.log(Math.abs(-4)); // 4
+
+// ✅ Rounding Methods
+console.log(Math.round(4.6));  // 5 (nearest integer)
+console.log(Math.floor(4.9));  // 4 (rounds down)
+console.log(Math.ceil(4.1));   // 5 (rounds up)
+
+// ✅ Min / Max
+console.log(Math.max(4, 5, 3, 6, 8)); // 8
+console.log(Math.min(4, 3, 6, 8, 9)); // 3
+
+// ✅ Random Number between 0 and 1
+console.log(Math.random()); // Example: 0.54849
+
+// ✅ Random Integer between 1 to 10 (inclusive)
+console.log(Math.floor(Math.random() * 10) + 1); 
+
+// ✅ Random Integer in Custom Range (min to max)
+const min = 10;
+const max = 20;
+
+// Formula → Math.floor(Math.random() * (max - min + 1)) + min;
+console.log(Math.floor(Math.random() * (max - min + 1)) + min);
+
+// ==========================================================
+// 🔍 Summary
+// ==========================================================
+
+// 🔹 Use `toFixed()` to limit decimal places (for currency, etc.)
+// 🔹 `toPrecision()` is useful for scientific/engineering output
+// 🔹 `toLocaleString()` is great for formatting readable large numbers
+// 🔹 Use `Math.random()` + `Math.floor()` to generate integers
+// 🔹 Math functions are very useful in games, simulations, validations
+
+// 🔗 MDN Docs → https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
+
+// ==========================================================
+// End of Number & Math Notes
+// ==========================================================
+=======
+const credit = 500
+
+const balance = new Number(200)
+console.log(balance)
+console.log(credit);
+
+console.log(balance.toString().length);
+console.log(balance.toFixed(2));
+
+
+const otherNumber = 23.8996
+console.log(otherNumber.toPrecision(3)); // gives 23.9
+
+const hundreds = 100000
+console.log(hundreds.toLocaleString('en-In'));
+
+
+//--------------------MATHS-------------------------
+//math library comes in JS by default 
+
+console.log(Math.abs(-4));//Absolute value
+console.log(Math.round(4.6));//gives 5
+console.log(Math.floor(4.9));//gives 4
+console.log(Math.max(4,5,3,6,8));
+console.log(Math.min(4,3,6,8,9));
+
+
+console.log(Math.random());// gives random value between 0 and 1
+//in it vaue can be even 0 so to avoid getting 0 we do 
+console.log(Math.floor(Math.random()*10)+1);// doing this we get random number between 1 to 10 not  0
+
+
+const min = 10 
+const max = 20
+
+console.log(Math.floor(Math.random() * (max - min)) + min);
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 2e9e8314a9ce73b7206492c4d2485753cd0d6d51
