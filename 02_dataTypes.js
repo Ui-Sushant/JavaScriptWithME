@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 "use strict"; // Treat all JS code as newer version
 // ✅ It tells JavaScript:
 // “Hey, follow the latest strict rules! Don’t allow sloppy mistakes.”
@@ -81,34 +80,3 @@ console.log(typeof username); // it will return string
 // Non-Primitive:
 // Stored by reference, mutable, and can hold collections.
 // - Object (includes Arrays, Functions, etc.)
-=======
-"usestrict"; // treat all js code as never version
-
-//alert("Hello") //it shows Error as we are in Node not in Browser
-
-// Code readability must be high!!
-
-
-let name = "hitesh"
-let age = 18
-let isLoggedIN = false
-let state = null
-let me;
-
-//types of data types 
-//number range = 2 to the power 53
-//bigint usually not used
-//string prefer "" double quote
-//Boolean
-//null = standalone value 
-// undefined 
-//symbol = unique 
-
-//object
-
-
-console.log(typeof null); //it gives null 
-//interview question 
-console.log(typeof undefined);//it gives undefined
-
->>>>>>> 2e9e8314a9ce73b7206492c4d2485753cd0d6d51
